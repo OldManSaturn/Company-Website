@@ -19,8 +19,15 @@ def partnerships_page():
 @app.route('/legal')
 def legal_page():
     return render_template('legal.html')
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact_page():
+    if request.method == 'POST':
+        # Handle form submission
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
+        # Process the form data (e.g., save to database, send email, etc.)
+        return render_template('contact.html', success=True)
     return render_template('contact.html')
 
 @app.route('/base')
