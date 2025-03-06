@@ -9,7 +9,6 @@
 <body>
     <header>
         <!--<img src="{{ url_for('static', filename='img/updated-logo.jpeg') }}" alt="ACME Labs Logo" id="main-logo">-->
-        <h1>ACME Labs Inc</h1>
         <nav>
             <ul id="header-nav">
                 <li><img src="{{ url_for('static', filename='img/logo-pic-only.png') }}" alt="ACME Labs Logo" style="height: 50px;"></li>
@@ -25,7 +24,7 @@
     <main>
         {% block content %}{% endblock %}
     </main>
-    <footer>
+    <footer id="main-footer">
         <p>&copy; 2025 ACME Labs Inc. All rights reserved.</p>
     </footer>
 </body>

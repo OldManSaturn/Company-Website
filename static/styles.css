@@ -1,6 +1,6 @@
 #header-nav {
     background-color: #d2d0c1;
-    overflow: ;
+    overflow: hidden;
     display: flex;
     list-style-type: none;
     padding-left: 0;
@@ -28,4 +28,19 @@
 
 #main-logo {
     height: 50px;
+}
+
+#main-footer {
+    background-color: #d2d0c1;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+
 }
