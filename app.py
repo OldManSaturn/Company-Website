@@ -10,7 +10,9 @@ def index():
 @app.route('/home')
 def home():
     return render_template('home.html')
-
+@app.route('/products')
+def products_page():
+    return render_template('products.html')
 @app.route('/contact')
 def contact_page():
     return render_template('contact.html')
