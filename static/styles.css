@@ -44,3 +44,13 @@
     justify-content: center;
 
 }
+#fake-disclaimer {
+    font-size: 20px;
+    color: black;
+    padding: 16px;
+    font-style: italic;
+    background: #d2d0c1a1;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}

@@ -16,6 +16,9 @@ def products_page():
 @app.route('/partnerships')
 def partnerships_page():
     return render_template('partnerships.html')
+@app.route('/legal')
+def legal_page():
+    return render_template('legal.html')
 @app.route('/contact')
 def contact_page():
     return render_template('contact.html')
