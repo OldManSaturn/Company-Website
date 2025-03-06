@@ -13,6 +13,9 @@ def home():
 @app.route('/products')
 def products_page():
     return render_template('products.html')
+@app.route('/partnerships')
+def partnerships_page():
+    return render_template('partnerships.html')
 @app.route('/contact')
 def contact_page():
     return render_template('contact.html')
