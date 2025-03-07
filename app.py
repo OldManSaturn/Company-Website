@@ -36,6 +36,17 @@ def base_page():
 @app.route('/about')
 def about_page():
     return render_template('about.html')
+@app.route('/login', methods=['GET', 'POST'])
+def login_page():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        # Authenticate user (e.g., check username and password)
+        # If authentication is successful:
+        return render_template('login.html', success=True)
+        # If authentication fails:
+        # return render_template('login.html', error='Invalid credentials')
+    return render_template('login.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
